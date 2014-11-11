@@ -1,0 +1,21 @@
+# TEAM
+
+Designer & Developer: Emma McInall
+Site: http://emmamcinall.ca
+Github: http://github.com/mcin0244
+Twitter: @emmamcinall
+Email: hello@emmamcinall.ca or emcinall93@gmail.com
+Location: Ottawa, On
+
+---
+
+# THANKS
+
+
+---
+
+# TECHNOLOGY
+
+- Sublime Text
+- Github
+- Hover.com
