@@ -12,9 +12,24 @@
 	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+<!-- sticky-logo (img/js)
+<img class="sticky-logo" data-state="active" src="images/logo-white.svg" alt="Back to Top"></img> 
+-->
 
 <section class="header-section">
-	<h1> <img class ="header" src="http://placehold.it/350x150" alt="Emma McInall, Graphic Designer"> </h1>
+	<h1> <img class ="header" src="http://placehold.it/1400x700" alt="Emma McInall, Graphic Designer"></h1>
+
+	<nav>
+		<a href="#nav" class="nav-btn hide-text" data-state="inactive">navigation</a>
+			<nav class="nav nav-top" data-state="collapsed">
+				<ul>
+					<li><a href="index.html">WORK</a></li>
+					<li><a href="index.html">SERVICES</a></li>
+					<li><a href="index.html">ABOUT</a></li>
+				</ul>
+			</nav>
+	</nav>
+
 </section>
 
 <section class="work-section">
@@ -26,6 +41,9 @@
 <section class="about-section">
 </section>
 
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/sticky.js"></script>
 
 </body>
