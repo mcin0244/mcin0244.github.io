@@ -528,10 +528,14 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6,
-p, ul, ol, dl, dd, figure,
+p, dl, dd, figure,
 blockquote, details, hr,
 fieldset, pre, table {
   margin: 0 0 1.5rem;
+}
+
+ul, ol {
+  margin: 0 0 0;
 }
 
 .yotta {
@@ -705,33 +709,30 @@ sub {
 
 /*                      HEADER                        */
 
-/* image */
-header img {
+/* slider */
+.flexslider{
   max-width: 100%;
-  display: block;
-  padding: .625em;
   margin-left: auto;
   margin-right: auto;
+  padding: .625em;
+  border: 0;
+  box-shadow: none;
 }
 
-.xs-s-header-img{ 
-  display: inherit;
-}
-
-.m-l-header-img{ 
+.l-flexslider{
   display:none;
 }
 
 @media only screen and (min-width: 25em){
-.xs-s-header-img{
-  display: none
+.s-flexslider{
+  display:none;
 }
-.m-l-header-img{ 
-  display: inherit;
+.l-flexslider{
+  display:block;
 }
 
 }
-/* end - image */
+/* end - slider */
 
 /* navigation */
 
@@ -745,6 +746,7 @@ header img {
   position: absolute;
   top: 0px;  
   left: 3%;
+  z-index: 9999;
   
   background: #ED4223 url('../images/nav-icon.svg') no-repeat center center;
   opacity: 0.9;
@@ -796,7 +798,7 @@ header img {
   margin-top: 3.750em;
   margin-left: auto;
   margin-right: auto;
-  max-height: 18em;
+  max-height: 16em;
   padding: .625em;
 }
   
@@ -914,5 +916,102 @@ header img {
 }
 /* end - navigation */
 
-
 /*                end - HEADER                        */
+
+
+/*                      WORK                          */
+.work-section{
+  background-color: #F5F5F5;
+  padding: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.work-section h1 {
+  color: #333;
+  padding: 1em;
+  text-align: center;
+}
+/* end - honeycombs */
+
+/*                end - WORK                          */
+
+/*                   SERVICES                         */
+.services-section{
+  background-color: #FFF;
+  padding: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.services-section h1 {
+  color: #333;
+  padding: 1.250em;
+  text-align: center;
+}
+
+/* buckets */
+
+.service-1{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #333;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service-2{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #333;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service-3{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #333;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.services-body{
+  color: #fff;
+  position: absolute;
+  padding: 5px;
+  text-align: center;
+}
+
+.services p{
+  text-align: center;
+  color: #fff;
+}
+
+.services h2{
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.services h3{
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.services img{
+  max-height:50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* end - buckets */
+
+/*                 end - SERVICES                      */
+
+/*                     ABOUT                           */
+
+/*                  end - ABOUT                       */

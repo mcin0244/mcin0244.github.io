@@ -9,15 +9,32 @@
 	<title>Emma McInall · Graphic Design · Ottawa, Ontario, Canada</title>
 
 	<link href="css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+	<link rel="stylesheet" href="honeycombs/css/honeycombs.css" type="text/css">
 	<link href="css/main.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <header>
-<div class="m-l-header-img" 
-	<img src="http://placehold.it/650x400" alt="Feature Image">
-</div>
+	<!-- (large screens) Flexslider Starts -->
+	<div class="l-flexslider">
+		<div class="flexslider">
+		  <ul class="slides">
+			<li>
+				<img src="http://placekitten.com/900/400" alt="A cute kitten">
+			</li>
+			<li>
+				<img src="http://placekitten.com/g/900/400" alt="An adorable kitten">
+			</li>
+			<li>
+				<img src="http://placekitten.com/900/400" alt="A fuzzy kitten">
+			</li>
+		  </ul>
+		</div>
+	</div>
+	<!-- (large screens) Flexslider Ends -->
+
 	<nav>
 		<a href="#nav" class="nav-btn hide-text" data-state="inactive">Navigation</a>
 		<nav class="nav nav-top" data-state="collapsed">
@@ -28,16 +45,93 @@
 			</ul>
 		</nav>
 	</nav>
-<div class="xs-s-header-img" 
-	<img src="http://placehold.it/400x650" alt="Feature Image">
-</div>
 
+	<!-- (small screens) Flexslider Starts -->
+	<div class="s-flexslider">
+		<div class="flexslider">
+		  <ul class="slides">
+			<li>
+				<img src="http://placekitten.com/900/400" alt="A cute kitten">
+			</li>
+			<li>
+				<img src="http://placekitten.com/g/900/400" alt="An adorable kitten">
+			</li>
+			<li>
+				<img src="http://placekitten.com/900/400" alt="A fuzzy kitten">
+			</li>
+		  </ul>
+		</div>
+	</div>
+	<!-- (small screens) Flexslider Ends -->
 </header>
 
 <section class="work-section">
+	<h1> WORK </h1>
+	<!-- Honeycomb starts -->
+<div class="honeycombs">
+ 
+<div class="comb"> <img src="http://placekitten.com/900/400" /> 
+<span>Image Caption 1</span> </div>
+ 
+<div class="comb"> <img src="http://placekitten.com/900/400" /> 
+<span>Image Caption 2</span> </div>
+ 
+<div class="comb"> <img src="http://placekitten.com/900/400" /> 
+<span>Image Caption 3</span> </div>
+
+<div class="comb"> <img src="http://placekitten.com/900/400" /> 
+<span>Image Caption 4</span> </div>
+
+<div class="comb"> <img src="http://placekitten.com/900/400" /> 
+<span>Image Caption 5</span> </div>
+
+<div class="comb"> <img src="http://placekitten.com/900/400" /> 
+<span>Image Caption 6</span> </div>
+
+<div class="comb"> <img src="http://placekitten.com/900/400" /> 
+<span>Image Caption 7</span> </div>
+
+<div class="comb"> <img src="http://placekitten.com/900/400" /> 
+<span>Image Caption 8</span> </div>
+ 
+</div>
+	<!-- Honeycomb Ends -->
 </section>
 
 <section class="services-section">
+<h1> SERVICES </h1>
+
+<div class="service-1">
+	<div class="services-img">
+		<a href="#"> <img src="http://placekitten.com/g/200/300" alt="Branding and Identity"></a>
+	</div>
+	<div class="services-body">
+		<h3>BRANDING & IDENTITY</h3>
+		<p>Lorem ipsum</p>
+	</div>
+</div>
+
+<div class="service-2">
+	<div class="services-img">
+		<a href="#"> <img src="http://placekitten.com/g/200/300" alt="Branding and Identity"></a>
+	</div>
+	<div class="services-body">
+		<h3>BRANDING & IDENTITY</h3>
+		<p>Lorem ipsum</p>
+	</div>
+</div>
+
+<div class="service-3">
+	<div class="services-img">
+		<a href="#"> <img src="http://placekitten.com/g/200/300" alt="Branding and Identity"></a>
+	</div>
+	<div class="services-body">
+		<h3>BRANDING & IDENTITY</h3>
+		<p>Lorem ipsum</p>
+	</div>
+</div>
+
+
 </section>
 
 <section class="about-section">
@@ -46,8 +140,32 @@
 <footer>
 </footer>
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/nav.js"></script>
 
-</body>
+<!-- Import jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!-- Import jQuery Flexslider plugin -->
+		<script src="flexslider/jquery.flexslider-min.js"></script>
+<!-- Import jQuery Honeycomb plugin -->
+<script src="honeycombs/js/jquery.honeycombs.js"></script> 
+<!-- Import JS -->
+		<script src="js/nav.js"></script>
+<!-- Fire Flexslider -->
+		<script type="text/javascript" charset="utf-8">
+		$(window).load(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide"
+		  });
+		});
+		</script>
+<!-- Fire Honeycombs -->
+<script type="text/javascript">
+$(document).ready(function() {
+$('.honeycombs').honeycombs({
+combWidth: 250,
+margin: 10
+});
+});
+</script>
+
+	</body>
 </html>
