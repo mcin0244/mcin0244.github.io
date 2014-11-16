@@ -871,8 +871,6 @@ sub {
   width: 33.33%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5em;
-  padding-right: 5em;
 }
   
 .nav-btn,
@@ -898,8 +896,6 @@ sub {
   width: 33.33%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5em;
-  padding-right: 5em;
 }
   
 .nav-btn,
@@ -925,8 +921,6 @@ sub {
   width: 33.33%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5em;
-  padding-right: 5em;
 }
 
 /*Same look as adding the border to .nav-top li*/
