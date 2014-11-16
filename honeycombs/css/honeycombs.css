@@ -13,17 +13,17 @@
 	width: 100%;
 	background-color: #333333;
 	opacity: 0.8;
-	font-family: sans-serif;
 	color: #FFF;
 }
 .honeycombs .inner-text{
-	padding-top: 30%;
+	padding-top: 40%;
+	font-family: 'Playfair Display', serif;
+	font-style: italic; 
 }
 
 .honeycombs .honeycombs-inner-wrapper{
 	display: inline-block;
 	overflow: hidden;
-	width: 100%;
 	position: relative;
 }
 

@@ -7,7 +7,15 @@ p: Didot Std;
 #333333 / rgb(51,51,51) - Dark Gray
 #ED4223 / rgb(237,66,35) - Accent Orange
 */
+@charset "UTF-8";
+/* Responsive Setup 
 
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+*/
 /* common */
 html {
   -moz-text-size-adjust: 100%;
@@ -36,6 +44,27 @@ white-space: nowrap;
 overflow: hidden;
 }
 
+.ease-all{
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+<<<<<<< HEAD
+  -o-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+.ease-bounce{
+  -webkit-transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+=======
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+>>>>>>> b8f29e0e15ea3d6f4e77185d24a63b87c2fbf930
+}
 /* end - common */
 
 /* responsive grid */
@@ -709,6 +738,14 @@ sub {
 
 /*                      HEADER                        */
 
+.header{
+  background-color: #FFFFFF;
+  padding: 2em;
+  padding-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* slider */
 .flexslider{
   max-width: 100%;
@@ -927,13 +964,11 @@ sub {
   margin-left: auto;
 }
 
-.work-section h1 {
-  color: #333;
-  padding: 1em;
+.work-section h2{
   text-align: center;
+  color: #333;
+  padding-top: 1.250em;
 }
-/* end - honeycombs */
-
 /*                end - WORK                          */
 
 /*                   SERVICES                         */
@@ -944,74 +979,82 @@ sub {
   margin-left: auto;
 }
 
-.services-section h1 {
-  color: #333;
-  padding: 1.250em;
+.services-section h2{
   text-align: center;
+  color: #333;
+  padding-top: 1.250em;
 }
 
-/* buckets */
-
-.service-1{
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  background-color: #333;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.service-2{
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  background-color: #333;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.service-3{
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  background-color: #333;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.services-body{
+.services-section h5, h6{
   color: #fff;
-  position: absolute;
   padding: 5px;
   text-align: center;
 }
 
-.services p{
+.services-section p{
   text-align: center;
   color: #fff;
 }
 
-.services h2{
-  color: #fff;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-}
-
-.services h3{
-  color: #fff;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-}
-
-.services img{
-  max-height:50%;
+.services-section img{
+  max-height:100px;
   margin-right: auto;
   margin-left: auto;
 }
+
+/* buckets */
+.service-1{
+  width: 25%;
+  margin: 1em;
+  padding: 1em;
+  min-width: 200px;
+  display: inline-block;
+  background-color: #333;
+}
+
+.service-2{
+  width: 25%;
+  margin: 1em;
+  padding: 1em;
+  min-width: 200px;
+  display: inline-block;
+  background-color: #333;
+}
+
+.service-3{
+  width: 25%;
+  margin: 1em;
+  padding: 1em;
+  min-width: 200px;
+  display: inline-block;
+  background-color: #333;
+}
+
+
 /* end - buckets */
 
 /*                 end - SERVICES                      */
 
 /*                     ABOUT                           */
+.about-section{
+  background: #333 url('../images/about-section-background.jpg') no-repeat center center;
+  padding: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.about-section h2{
+  text-align: center;
+  color: #FFF;
+  padding-top: 1.250em;
+}
+
+.about-section p{
+  color: #FFF;
+}
 /*                  end - ABOUT                       */
+
+/*                     FOOTER                          */
+
+/*                  end - FOOTER                       */
+
