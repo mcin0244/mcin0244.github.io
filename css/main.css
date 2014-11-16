@@ -1003,33 +1003,34 @@ sub {
 }
 
 /* buckets */
-.service-1{
+.service {
   width: 25%;
   margin: 1em;
   padding: 1em;
   min-width: 200px;
   display: inline-block;
   background-color: #333;
+
+  transition: all 150ms linear;
 }
 
-.service-2{
-  width: 25%;
-  margin: 1em;
-  padding: 1em;
-  min-width: 200px;
-  display: inline-block;
-  background-color: #333;
+
+.js-service-fade {
+  /*Don't forget the other prefixes! */
+  -webkit-animation: service-fade 1s linear forwards;
 }
 
-.service-3{
-  width: 25%;
-  margin: 1em;
-  padding: 1em;
-  min-width: 200px;
-  display: inline-block;
-  background-color: #333;
+/*Don't forget the other prefixes! */
+@-webkit-keyframes service-fade{
+  0% {
+    opacity: 0;
+    margin-top:0em;
+  }
+  100% {
+    opacity: 1;
+    margin-top:-5em;
+  }
 }
-
 
 /* end - buckets */
 
@@ -1050,6 +1051,7 @@ sub {
 }
 
 .about-section p{
+  text-align: left;
   color: #FFF;
 }
 /*                  end - ABOUT                       */
