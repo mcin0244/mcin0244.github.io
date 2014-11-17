@@ -1,6 +1,6 @@
 var $win = $(window);
-var $service = $('.service')
-var $servicesSection = $('.services-section')
+var $servicesSection = $('.services-section');
+var $service = $('.service');
 
 $servicesSection.waypoint(function () {
 	$service.addClass('js-service-fade');
