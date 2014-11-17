@@ -64,7 +64,8 @@ overflow: hidden;
 
 /* responsive grid */
 html {
-  font: normal 87.5%/2 Georgia,serif;
+  font: normal 87.5%/2 'Open Sans', sans-serif;
+  font-weight: 200;
 }
 
 @media only screen and (min-width: 60em) {
@@ -258,6 +259,28 @@ sub {
 /* end -- responsive type */
 
 /*                      HEADER                        */
+/* sticky */
+#fixed-btn {
+    display: block;
+    height: 100px;
+    width: 80px;
+    position: absolute;
+    top: 0px;  
+    left: 3%;
+    z-index: 9999;
+    background: #ED4223;
+    opacity: 0.9;
+}
+#fixed-btn a {
+  width: 100%;
+}
+
+#fixed-inner {
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* end of sticky */
 
 .header{
   background-color: #FFFFFF;
@@ -277,7 +300,7 @@ sub {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: .625em;
+  padding-top: .700em;
   border: 0;
   box-shadow: none;
 }
@@ -556,6 +579,7 @@ sub {
   opacity: 0;
   display: inline-block;
   background-color: #F5F5F5;
+  text-align: center;
 
   transition: all 150ms linear;
 }
@@ -578,6 +602,7 @@ sub {
 @media only screen and (min-width: 75em){
   .service {
   width: 30%;
+  text-align: center;
 }
 }
 /* end - buckets */
@@ -642,10 +667,9 @@ h4, h5{
   color: #333;
 }
 
-.footer
-ul,li{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+.footer ul, li{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
   line-height: 1.5em;
   padding-left: 1em;
   margin: 0;
@@ -665,16 +689,11 @@ ul,li{
   margin-left: auto;
 }
 
-@media only screen and (min-width: 25em){
+@media only screen and (min-width: 38em){
 .footer 
-  h4, h5{
+  h4, h5, p{
     text-align: left;
-    display: inline-block;
-  }
-
-.footer
-  ul,li{
-    text-align: left;
+    z-index: -9999;
   }
 
 .social-media {

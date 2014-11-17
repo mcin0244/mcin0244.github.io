@@ -17,6 +17,15 @@
 <body>
 
 <header>
+	<!-- sticky back to top button starts  -->
+	<div id='fixed-btn'>
+ 		 <div id='fixed-inner'>
+   			 <a class='go-top' href='#header' title='back to top'><img src="images/logo-white.svg" alt="back to top"></a>
+ 		 </div>
+	</div>
+
+	<!-- sticky back to top button  end    -->
+
 	<!-- (large screens) Flexslider Starts -->
 	<div class="l-flexslider">
 		<div class="flexslider">
@@ -136,10 +145,9 @@
 <footer>
 	<h5>EMMA MCINALL</h5>
 	<ul>
-		<li>613 · 327 · 5668</li>
-		<li>hello@emmamcinall.ca</li>
+		<li><p>613 · 327 · 5668</p></li>
+		<li><p>hello@emmamcinall.ca</p></li>
 	</ul>
-	
 	<div class="social-media">
 		<img src="images/btn-behance.svg" alt="follow me on behance"/>
 		<img src="images/btn-vimeo.svg" alt="follow me on behance"/>
@@ -173,6 +181,26 @@ $('.honeycombs').honeycombs({
 combWidth: 250,
 margin: 10
 });
+});
+
+<script>
+$(function () {
+  $("#fixed-bar")
+    .css({position:'fixed',bottom:'0px'})
+    .hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+      $('#fixed-bar').fadeIn(200);
+    } else {
+      $('#fixed-bar').fadeOut(200);
+    }
+  });
+  $('.go-top').click(function () {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 1000);
+    return false;
+  });
 });
 </script>
 
