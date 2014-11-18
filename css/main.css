@@ -362,7 +362,10 @@ section.module.parallax-3 {
   left: 3%;
   z-index: 9999;
   
-  background: #ED4223 url('../images/nav-icon.svg') no-repeat center center;
+  background: #333 url('../images/nav-icon.svg') no-repeat center center;
+  -webkit-box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
   opacity: 0.9;
   /* background-color || background-image || background-repeat || background-position*/
 }
@@ -370,12 +373,18 @@ section.module.parallax-3 {
 .nav-btn:hover,
 .nav-btn:focus,
 .nav-btn:active{
-  background-color: #ED4223;
+  background-color: #333;
+  -webkit-box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
   opacity: 1;
 }
 
 .nav-btn[data-state="active"] {
-  background: #ED4223 url('../images/nav-close.svg') no-repeat center center;
+  background: #333 url('../images/nav-close.svg') no-repeat center center;
+  -webkit-box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 70px 3px rgba(0,0,0,0.75);
   opacity: 1;
 }
 
@@ -557,7 +566,7 @@ section.module.parallax-3 {
   line-height: 1.5em;
   color: #333;
   padding: 5px;
-  text-align: left;
+  text-align: center;
 }
 
 .services-section p{
@@ -614,7 +623,9 @@ section.module.parallax-3 {
 
 @media only screen and (min-width: 75em){
   .service {
-  width: 29%;
+  padding: 3em;
+  width: 30%;
+  min-height: 400px;
 
   text-align: center;
 }
@@ -627,9 +638,7 @@ section.module.parallax-3 {
 .about-section{
   background-color: #333;
   margin: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding: 40px;
+  padding: 1em;
 }
 
 .about-section h2{
@@ -660,9 +669,7 @@ section.module.parallax-3 {
 
 @media only screen and (min-width: 60em){
 .about-section{
-  padding-left: 500px;
-  padding-right: 500px;
-  padding: 50px;
+  padding: 3em;
 }
 }
 /*                  end - ABOUT                       */
@@ -725,6 +732,7 @@ h4, h5{
   max-width:70px;
   display: inline-block;
   padding-left: 1em;
+  z-index: -9999;
 }
 }
 /*                  end - FOOTER                       */
