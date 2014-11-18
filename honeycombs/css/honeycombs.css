@@ -1,9 +1,6 @@
 .honeycombs{
 	position: relative;
 	overflow: hidden;
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
 	text-align: center;
 }
 
@@ -24,9 +21,7 @@
 .honeycombs .honeycombs-inner-wrapper{
 	display: inline-block;
 	overflow: hidden;
-	width: 700px;
 	position: relative;
-	height: 1200px;
 }
 
 .honeycombs .comb{

@@ -39,6 +39,11 @@ white-space: nowrap;
 overflow: hidden;
 }
 
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .ease-all{
   -webkit-transition: all 350ms ease-in-out;
   -moz-transition: all 350ms ease-in-out;
@@ -257,83 +262,92 @@ sub {
 }
 
 /* end -- responsive type */
-
-/*                      HEADER                        */
-.header {
-  background: url(../images/bg-header.jpeg) no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  background-size: cover;
-  position:relative;
+/*                     SECTIONS                       */
+section.module:last-child {
+  margin-bottom: 0;
 }
-
-.maskHeader{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(237, 66, 35, 0.8);
-}
-
-.header-text {
-width:100%;
-vertical-align: middle;
-text-align: center;
-padding:0 0;
-color:#fff;
-position:absolute;
-bottom:50%;
-left:50%;
-transform: translate(-50%, 50%);
--webkit-transform: translate(-50%, 50%);
--moz-transform: translate(-50%, 50%);
--ms-transform: translate(-50%, 50%);
--o-transform: translate(-50%, 50%);
-}
-
-.header-text h1 {
-  padding: 0;
-  margin: 0;
+section.module h2 {
+  margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  line-height: 1.5em;
-  font-weight: 600;
-  color:#fff;
 }
-.header-text h2{
-  color:#F5F5F5;
+
+section.module p {
+  margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
-  line-height: 1.5em;
+  font-weight: 200;  
 }
 
-/* slider */
-.flexslider{
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: .700em;
-  border: 0;
-  box-shadow: none;
+section.module p:last-child {
+  margin-bottom: 0;
 }
 
-.l-flexslider{
-  display:none;
+.container img{
+  width: 250px;
+  opacity: 0.9;
+  line-height: 350px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-@media only screen and (min-width: 25em){
-.s-flexslider{
-  display:none;
-}
-.l-flexslider{
-  display:block;
+section.module.parallax-1 {
+  height: 710px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
+section.module.parallax-2, 
+.module.parallax-3,
+.module.parallax-4 {
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-/* end - slider */
+section.module.parallax h1, h2 {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 350px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2em;
+  font-style:italic;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("../images/bg-desk.jpeg");
+}
+section.module.parallax-2 {
+  background-image: url("../images/bg-table-macbook.jpeg");
+}
+section.module.parallax-3 {
+  background-image: url("../images/bg-wood.jpg");
+}
 
+/*                  end - SECTIONS                    */
+
+/*                      HEADER                        */
 /* navigation */
 
 /* navigation styles */
@@ -400,6 +414,10 @@ transform: translate(-50%, 50%);
   margin-right: auto;
   max-height: 16em;
   padding: .625em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  width: 33.33%;
+
 }
   
 @media only screen and (min-width: 25em){
@@ -520,40 +538,17 @@ transform: translate(-50%, 50%);
 /*                      WORK                          */
 .work-section{
   background-color: #F5F5F5;
-  padding: 2em;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
+  padding: 40px 0;
 }
-
-.work-section h2{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  line-height: 1.5em;
-  text-align: center;
-  color: #333;
-  padding-top: 1.250em;
-}
-
-/* hexagon */
-
-/* end - hexagon */
 /*                end - WORK                          */
 
 /*                   SERVICES                         */
 .services-section{
   background-color: #FFF;
-  padding: 2em;
   margin-right: auto;
   margin-left: auto;
-}
-
-.services-section h2{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  line-height: 1.5em;
-  text-align: center;
-  color: #333;
-  padding-top: 1.250em;
+  padding: 40px 0;
 }
 
 .services-section h5, h6{
@@ -562,19 +557,19 @@ transform: translate(-50%, 50%);
   line-height: 1.5em;
   color: #333;
   padding: 5px;
-  text-align: center;
+  text-align: left;
 }
 
 .services-section p{
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   line-height: 1.5em;
-  text-align: center;
+  text-align: left;
   color: #333;
 }
 
 .services-section img{
-  max-height:120px;
+  max-height:100px;
   padding: 1em;
   opacity: 0.9;
   margin-right: auto;
@@ -619,7 +614,8 @@ transform: translate(-50%, 50%);
 
 @media only screen and (min-width: 75em){
   .service {
-  width: 30%;
+  width: 29%;
+
   text-align: center;
 }
 }
@@ -629,10 +625,11 @@ transform: translate(-50%, 50%);
 
 /*                     ABOUT                           */
 .about-section{
-  background: #333 url('../images/about-section-background.jpg') no-repeat center center;
-  padding: 2em;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: #333;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding: 40px;
 }
 
 .about-section h2{
@@ -651,18 +648,23 @@ transform: translate(-50%, 50%);
   font-weight: 600; 
   line-height: 1.5em;
   color: #ED4223;
-  padding-top: 1.250em;
 }
 
 .about-section p{
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.5em;
-  text-align: left;
+  text-align: justify;
   color: #FFF;
 }
 
-
+@media only screen and (min-width: 60em){
+.about-section{
+  padding-left: 500px;
+  padding-right: 500px;
+  padding: 50px;
+}
+}
 /*                  end - ABOUT                       */
 
 /*                     FOOTER                          */
