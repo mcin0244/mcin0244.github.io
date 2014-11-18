@@ -675,7 +675,7 @@ section.module.parallax-3 {
 /*                  end - ABOUT                       */
 
 /*                     FOOTER                          */
-.footer{
+#footer{
   background-color: #ED4223;
   padding: 2em;
   padding-top: 2em;
@@ -683,7 +683,7 @@ section.module.parallax-3 {
   margin-left: auto;
 }
 
-.footer 
+#footer 
 h4, h5{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -694,7 +694,7 @@ h4, h5{
   color: #333;
 }
 
-.footer ul, li{
+#footer ul, li{
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   line-height: 1.5em;
@@ -717,7 +717,7 @@ h4, h5{
 }
 
 @media only screen and (min-width: 38em){
-.footer 
+#footer 
   h4, h5, p{
     text-align: left;
     z-index: -9999;
