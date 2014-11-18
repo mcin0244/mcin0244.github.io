@@ -287,6 +287,8 @@ section.module p:last-child {
   opacity: 0.9;
   line-height: 350px;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   text-transform: uppercase;
 }
 
@@ -395,6 +397,7 @@ section.module.parallax-3 {
   padding: 1rem;
   text-align: center;
   color: #333333;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   margin-top: 1px;
 }
@@ -665,6 +668,25 @@ section.module.parallax-3 {
   line-height: 1.5em;
   text-align: justify;
   color: #FFF;
+}
+
+.about {
+    transition: all 150ms linear;
+}
+
+.js-service-fade {
+  /*Don't forget the other prefixes! */
+  -webkit-animation: service-fade 1s linear forwards;
+}
+
+/*Don't forget the other prefixes! */
+@-webkit-keyframes service-fade{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 60em){
