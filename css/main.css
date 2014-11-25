@@ -28,6 +28,10 @@ html {
   padding: 0;
 }
 
+main {
+  display: block;
+}
+
 img{ 
   width: 100%;
 }
@@ -997,7 +1001,7 @@ li {
 
 
 /*MEDIA QUERY*/
-@media only screen and (max-width : 640px) {
+@media only screen and (max-width : 38em) {
 
   header {
 
@@ -1038,7 +1042,36 @@ li {
     display: block;
 
   }
+}
   /* END - NAVIGATION */
+
+  /* HEADER PARALLAX */
+
+ .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+  /* PARALLAX */
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 792px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax img {
+  display: block;
+  margin: 0 auto; 
+}
+
+section.module.parallax-1 {
+  background-image: url("../img/placeholder-1.jpg");
+}
+
+  /* END - PARALLAX */
 
 /* END - HEADER */
 
