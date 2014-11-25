@@ -3,7 +3,6 @@ var $servicesSection = $('.services-section');
 var $service = $('.service');
 var $aboutSection = $('.about-section');
 var $about = $('.about');
-
 $servicesSection.waypoint(function () {
 	$service.addClass('js-service-fade');
 }, { offset: '50%' });
