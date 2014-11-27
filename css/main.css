@@ -71,9 +71,9 @@ header {
 #logo{
   margin: 20px;
   float: left;
-  width: 200px;
+  width: 50px;
   height: 50px;
-  background: url(../img/logo.png) no-repeat center;
+  background: url(../img/header-logo.svg) no-repeat center;
   display: block;
 
 }
@@ -174,14 +174,23 @@ li {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 23.5em;
+  padding-top: 8em;
+}
+
+ .container img{
+  display: block;
+  opacity: 0.8;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
  .arrow img{
   display: block;
   max-width: 5%;
   margin: 2em;
-  padding-top: 9em;
+  padding-top: 4em;
   opacity: 0.8;
 }
 
@@ -208,14 +217,15 @@ section.module.parallax img {
 
 section.module.parallax h1 {
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 700;
+  font-weight: 300;
+  letter-spacing: 3px;
   text-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 section.module.parallax h3 {
   color: rgba(255, 255, 255, 0.8);
-  font-weight: 300;
+  font-weight: 100;
   text-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
