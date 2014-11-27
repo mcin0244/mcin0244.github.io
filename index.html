@@ -9,7 +9,10 @@
 	<title>Emma McInall · Graphic Design · Ottawa, Ontario, Canada</title>
 
 	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/grid.css" rel="stylesheet">
+	<link href="css/typography.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 	<body id="top">
@@ -120,7 +123,31 @@
 				</div>
 			<!-- END - WORK THUMBNAILS -->
 
-			<!--  WORK DETAILS -->
+			<!--  WORK DETAILS 
+				<div class="portfolio-wrapper">
+							<div class="flexslider">
+							  <ul class="slides">
+								<li>
+									<img src="http://placekitten.com/900/400" alt="A cute kitten">
+								</li>
+								<li>
+									<img src="http://placekitten.com/g/900/400" alt="An adorable kitten">
+									<p class="flex-caption">What a cute kitten! (Caption)</p>
+								</li>
+								<li>
+									<a href="http://placekitten.com">
+									<img src="http://placekitten.com/900/399" alt="A cuddly kitty">
+									<p class="flex-caption">What a cute kitten! (Link Example)</p>
+									</a>
+								</li>
+							  </ul>
+							</div>
+					<div class="portfolio-description">
+						<h2 class="portfolio-title">portfolio-1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo nibh non lorem blandit, non sollicitudin odio finibus. Ut ut nunc diam. Nam sagittis, nunc a tristique luctus, odio orci scelerisque ligula, eu laoreet purus ligula sit amet lorem. Nunc sed sapien ac odio elementum commodo.</p>
+					</div>
+				</div>
+
 			<!-- END - WORK DETAILS -->
 		</section>
 		<!-- END - WORK SECTION -->
@@ -133,13 +160,13 @@
 			    <h2 class="services-title">WHAT I DO</h2>
 			    <span class="services-border"></span>
 			    	<div class="services-icons">
-			    		<div class="unit unit-s-1-2 unit-m-1-2 unit-l-1-4 gutter">
+			    		<div class="unit unit-s-1-2 unit-m-1-2 unit-l-1-4 gutter-right">
 			    		<img src="img/icon-branding-identity.svg" alt"Branding and Identity">
 			    		</div>
-			    		<div class="unit unit-s-1-2 unit-m-1-2 unit-l-1-4 gutter">
+			    		<div class="unit unit-s-1-2 unit-m-1-2 unit-l-1-4 gutter-left gutter-right">
 			    			<img src="img/icon-design.svg" alt"Graphic Design">
 			    		</div>
-			    		<div class="unit unit-s-1-2 unit-m-1-2 unit-l-1-4 gutter">
+			    		<div class="unit unit-s-1-2 unit-m-1-2 unit-l-1-4 gutter-left">
 			    			<img src="img/icon-creative-development.svg" alt"Creative Development">
 			    		</div>
 			    	</div>
@@ -151,21 +178,61 @@
 
 		<!-- ABOUT -->
 		<section class="about" id="about">
+			<div class="picture">
+			    	<img src="img/meet-emma.png" alt"Hello, I'm Emma!">
+			</div>
+
 			<h2 class="about-title">MEET EMMA</h2>
 			    <span class="about-border"></span>
+
+			    <div class="meet-emma">
+			    	<p>Design is my biggest passion. Through it I have learned to view the world in a different perspective and offer creative solutions to everyday problems. I posses a strong visual sense with the ability to take original ideas from concept to completion. I am continually striving to create a balance of design and functionality, further bridging the gap between communication and people.
+			    		<br> To put it in the simplest terms, I am a designer because at the end of the day I am fufilled by what I do.</p>
+			    </div>
 		</section>
 		<!-- END - ABOUT -->
 
 		<!-- FOOTER -->
 		<section class="footer" id="footer">
+			 <h2 class="footer-title">LIKE WHAT YOU SEE?</h2>
+			    <span class="footer-border"></span>
+			    				<ul class="social-links">
+					<li>
+						<a href="mailto: hello@emmamcinall.ca">
+  							<img src="img/icon-email.svg" alt="Email Emma">
+						</a>
+					</li>
 
+					<li>
+						<a href="http://behance.net/emmaleemcinall">
+  							<img src="img/icon-behance.svg" alt="Follow Emma on Behance">
+						</a>
+					</li>
+
+					<li>
+						<a href="ca.linkedin.com/in/emmamcinall/">
+  							<img src="img/icon-linkedin.svg" alt="Connect with Emma on Linked In">
+						</a>
+					</li>
+				</ul>
+			<a class="email" href="mailto:hello@emmamcinall.ca">
+				<p>hello@emmamcinall.ca</p>
+			</a>
+			<p class="copyright">©EMMA MCINALL 2014</p>
 		</section>
 		<!-- END - FOOTER -->
 
-<!-- Import jQuery library -->
-
-<!-- Import JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script src="js/services.js"></script>
+		<!-- Import jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<!-- Import jQuery Flexslider plugin -->
+		<script src="flexslider/jquery.flexslider-min.js"></script>
+		<!-- Fire the plugin -->
+		<script type="text/javascript" charset="utf-8">
+		  $(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide",  
+				});
+		  });
+		</script>
 	</body>
 </html>
