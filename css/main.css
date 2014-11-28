@@ -105,15 +105,14 @@ ul {
   list-style: none;
 
 }
-/*
-li {
+nav li {
 
   display: inline-block;
   float: left;
   padding: 10px
 
 }
-*/
+
 .current {
 
   color: #2262AD;
