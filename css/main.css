@@ -313,6 +313,18 @@ section.module.parallax-1 {
     height: auto;
     font-weight: 300;
   }
+
+   .close img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 5%;
+    opacity: 0.8;
+  }
+
+  .close img.hover {
+    opacity: 1;
+  }
     /*  SLIDER */
 
       .flexslider{
@@ -452,15 +464,6 @@ section.module.parallax-1 {
   .services-icons img:hover{
     opacity: 1;
   }
-
-    @media only screen and (max-width : 38em) {
-    .icons figcaption{
-        opacity: 0;
-      }
-    .icons:hover figcaption{
-      opacity: 0;
-    }
-  }
   /* END - ICONS */
 
 /* END - SERVICES */
@@ -570,6 +573,7 @@ section.module.parallax-1 {
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin: 0 auto;
 }
 
 .social-links{
@@ -585,7 +589,8 @@ section.module.parallax-1 {
 
 .social-links li {
   display: inline-block;
-  width: 5%;
+  width: 7%;
+  padding: 5px;
 }
 
 .social-links img:hover{
