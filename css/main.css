@@ -197,6 +197,10 @@ nav li {
   opacity: 1;
 }
 
+section {
+  display: block;
+}
+
   /* PARALLAX */
 section.module.content {
   padding: 40px 0;
