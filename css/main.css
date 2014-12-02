@@ -197,10 +197,6 @@ nav li {
   opacity: 1;
 }
 
-section {
-  display: block;
-}
-
   /* PARALLAX */
 section.module.content {
   padding: 40px 0;
@@ -281,7 +277,49 @@ section.module.parallax-1 {
     padding-right: 3.125em;
   }
 }
+  .graphic{
+    position: relative;
+    overflow: hidden;
+  }
 
+  .graphic figcaption{
+    width: 100%;
+    position: absolute;
+    bottom: -5em;
+    background-color: #333;
+    color: #FFF;
+    height: auto;
+    font-weight: 300;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5em;
+      transition: all 250ms linear;
+  }
+
+  .graphic img{
+    top:0;
+    display: block;
+    position: relative;
+    transition: all 250ms linear;
+  }
+
+  .graphic:hover img{
+    top: -1em;
+  }
+
+  .graphic:hover figcaption{
+    bottom: 0;
+  }
+
+  @media only screen and (max-width : 38em) {
+  .graphic figcaption{
+    display: none;
+  }
+  .graphic:hover img{
+    top: 0;
+  }
+}
   /*  END - WORK GRID */
 
   /* PORTFOLIO DETAILS */
@@ -302,7 +340,6 @@ section.module.parallax-1 {
     margin-right: auto;
     margin-left: auto;
     height: auto;
-    padding: 1em;
   }
 
   .portfolio-title{
@@ -321,18 +358,29 @@ section.module.parallax-1 {
     line-height: 1.5em;
   }
 
-   .close img{
+   .close{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    max-width: 5%;
+    width: 20px;
     opacity: 0.8;
+  }
+
+  .close img {
+    width: 100%;
+    display: block;
   }
 
   .close img.hover {
     opacity: 1;
   }
     /*  SLIDER */
+
+      .slider-wrap {
+        max-width: 500px;
+        padding: 1em;
+        margin: 0 auto;
+      }
 
       .flexslider{
         display: block;
@@ -358,7 +406,6 @@ section.module.parallax-1 {
 .services{
   width: 100%;
   background-color: #333;
-  height: 420px;
   display: block;
 }
 
@@ -383,7 +430,6 @@ section.module.parallax-1 {
 }
   /* PARALLAX */
    .services-container {
-  display: block;
   width: 100%;
 }
   section.module.parallax-2 h2 { 
@@ -395,7 +441,6 @@ section.module.parallax-1 {
 }
 
   section.module.parallax-2 {
-  height: 420px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -424,11 +469,11 @@ section.module.parallax-1 {
   }
 
   .icons figcaption{
-    position: absolute;
+    position: relative;
     width: 100%;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.8);
-    opacity: 0;
+    opacity: 1;
     padding: 1em;
     font-size: 1em;
     line-height: 1.5em;
@@ -466,7 +511,6 @@ section.module.parallax-1 {
 
 
   .services-icons{
-    display: block;
     text-align: center;
     margin-left: 3.125em;
     margin-right: 3.125em;
@@ -483,7 +527,13 @@ section.module.parallax-1 {
     opacity: 1;
   }
 
-  @media only screen and (max-width : 38em) {
+  @media only screen and (min-width: 60em) {
+
+    .icons figcaption{
+      position: absolute;
+      opacity: 0;
+    }
+
   }
 
   /* END - ICONS */
@@ -618,8 +668,8 @@ section.module.parallax-1 {
 
 .social-links li {
   display: inline-block;
-  width: 7%;
-  padding: 5px;
+  width: 6%;
+  padding: 1em;
 }
 
 .social-links img:hover{
@@ -630,6 +680,7 @@ section.module.parallax-1 {
       .social-links li {
         display: inline-block;
         width: 15%;
+        padding: 5px;
       }
     }
 /* END - FOOTER */
