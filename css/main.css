@@ -159,6 +159,10 @@ nav li {
     display: block;
 
   }
+
+   .arrow img{
+      max-width: 5em;
+    }
 }
   /* END - NAVIGATION */
 
@@ -184,7 +188,7 @@ nav li {
 
  .arrow img{
   display: block;
-  max-width: 5%;
+  max-width: 3em;
   margin: 2em;
   padding-top: 5em;
   opacity: 0.8;
@@ -241,6 +245,12 @@ section.module.parallax-1 {
   margin: 0 auto;
   margin-top: 1em;
   margin-bottom: 2em;
+}
+
+@media only screen and (max-width : 38em) {
+  section.module.parallax-1 {
+  background-image: url("../img/mobile-header.jpg");
+  }
 }
   /* END - PARALLAX */
 

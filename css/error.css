@@ -152,13 +152,11 @@ nav li {
   }
 
   #menu-icon {
-
-    display:inline-block;
+    display: none;
 
   }
 
   nav ul, nav:active ul { 
-
     display: none;
     position: absolute;
     padding: 20px;
@@ -170,17 +168,16 @@ nav li {
   }
 
   nav li {
-
     text-align: center;
     width: 100%;
     padding: 10px 0;
     margin: 0;
-
+    display: none;
   }
 
   nav:hover ul {
 
-    display: block;
+    display: none;
 
   }
 }
