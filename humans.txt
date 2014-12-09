@@ -20,6 +20,7 @@ Location: Ottawa, On
 	 Contributing author: Tyler Smith (@mbmufffin)
 	---
 
+	and Thomas Bradely for all his help!!
 ---
 
 # TECHNOLOGY
@@ -27,3 +28,9 @@ Location: Ottawa, On
 - Sublime Text
 - Github
 - Hover.com
+
+# SITE 
+Last update: 2014/12/02
+Standards: HTML5, CSS3
+Components:Jquery, Javascript, CSS, HTML
+Software: Adobe, 
