@@ -213,6 +213,14 @@ section.module.parallax-1 {
   background-size: cover;
 }
 
+section.module.parallax-2 {
+  height: 250px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 section.module.parallax img {
   display: block;
   margin: 0 auto; 
@@ -238,6 +246,10 @@ section.module.parallax h3 {
 
 section.module.parallax-1 {
   background-image: url("../img/header-parallax.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("../img/about-parallax.jpg");
 }
 
 .intro-border{
@@ -438,7 +450,6 @@ section.module.parallax-1 {
   background-color:  #f4f1ef;
   min-height: 500px;
   display: block;
-  padding-top: 4.5em;
   padding-bottom: 7em;
 }
 
@@ -446,7 +457,7 @@ section.module.parallax-1 {
   font-weight: 700;
   letter-spacing: 3px;
   text-align: center;
-  color: #333;
+  color: #8d8e3b;
   text-transform: uppercase;
 }
 
@@ -454,10 +465,12 @@ section.module.parallax-1 {
   display: block;
   width: 80px;
   height: 2px;
-  background: #3a3a3c;
+  background: #8d8e3b;
   margin: 0 auto;
   margin-top: -1rem;
+  margin-bottom: 2em;
 }
+
 
   .picture{
     display: block;
@@ -507,16 +520,39 @@ section.module.parallax-1 {
     position: relative;
   }
 
-  .icons-border{
+  .icons-border-branding{
     display: block;
     width: 80px;
     height: 2px;
-    background: #3a3a3c;
+    background: #8d8e3b;
     opacity: 0.8;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
+    .icons-border-design{
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #dd7326;
+    opacity: 0.8;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .icons-border-development{
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #046485;
+    opacity: 0.8;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
 
 
   .icons figcaption{
@@ -551,14 +587,45 @@ section.module.parallax-1 {
   }
 
   .services-icons img{
-    width: 8em;
-    height: 8em;
-    padding-bottom: 1.25em;
-    opacity: 0.8;
+    width: 10em;
+    height: 10em;
+    padding-bottom: 1em;
   }
 
-  .services-icons img:hover{
-    opacity: 1;
+  .branding img:last-child{
+    display:none
+  }
+
+  .branding:hover img:first-child{
+    display:none
+  }
+
+  .branding:hover img:last-child{
+    display:inline-block
+  }
+
+  .design img:last-child{
+    display:none
+  }
+
+  .design:hover img:first-child{
+    display:none
+  }
+
+  .design:hover img:last-child{
+    display:inline-block
+  }
+
+  .development img:last-child{
+    display:none
+  }
+
+  .development:hover img:first-child{
+    display:none
+  }
+
+  .development:hover img:last-child{
+    display:inline-block
   }
 
   @media only screen and (min-width: 60em) {
@@ -650,18 +717,48 @@ section.module.parallax-1 {
 
 .social-links img{
     display: inline-block;
-    
-    opacity: 0.8;
 }
 
 .social-links li {
   display: inline-block;
-  width: 7%;
+  width: 8%;
   padding: 1em;
 }
 
-.social-links img:hover{
-    opacity: 1;
+  .mail img:last-child{
+    display:none
+  }
+
+  .mail:hover img:first-child{
+    display:none
+  }
+
+  .mail:hover img:last-child{
+    display:inline-block
+  }
+
+  .linkedin img:last-child{
+    display:none
+  }
+
+  .linkedin:hover img:first-child{
+    display:none
+  }
+
+  .linkedin:hover img:last-child{
+    display:inline-block
+  }
+
+  .behance img:last-child{
+    display:none
+  }
+
+  .behance:hover img:first-child{
+    display:none
+  }
+
+  .behance:hover img:last-child{
+    display:inline-block
   }
 
     @media only screen and (max-width : 38em) {
